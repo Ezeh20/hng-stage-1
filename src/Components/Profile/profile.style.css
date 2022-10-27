@@ -1,13 +1,50 @@
-.profile{
-    width: 100%;
-    margin-top: 64px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    max-width: 400px;
+
+
+.head{
+  display: flex;
+  justify-content: center;
 }
-.nav-button{
-    position: absolute;
-    right: 0;
-    top: -20px;
+
+.profile {
+  width: 100%;
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  max-width: 700px;
+}
+.nav-button {
+  position: absolute;
+  right: 0;
+  top: -20px;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+}
+
+.user-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+}
+.bg-hover {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+.bg-hover:hover{
+    opacity: .89;
+}
+.twitter{
+    font-size: 20px;
+    color: #101828;
+    font-weight: 700;
+    line-height: 30px;
 }

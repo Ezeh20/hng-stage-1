@@ -5,12 +5,18 @@ import more from '../../assets/img/more-Default.svg'
 
 const Profile = () => {
   return (
+    <div className="head">
     <div className="profile">
       <div className="user-info">
-        <img src={profile} alt="" />
-
+        <div>
+          <img src={profile} alt="" id="profile__img"/>
+          <img src={profileHover} alt="" className="bg-hover" />
+        </div>
+        <p className="twitter" id="twitter">Ceejay__1</p>
+        <p className="twitter" id="slack" hidden>Cii-jay</p>
       </div>
-        <img src={more} alt="" className="nav-button"/>
+      <img src={more} alt="" className="nav-button" />
+    </div>
     </div>
   );
 };
