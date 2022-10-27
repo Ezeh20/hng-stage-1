@@ -3,6 +3,7 @@ import slack from "../../assets/img//slack.svg"
 import github from "../../assets/img//Icon.svg"
 import i4g from "../../assets/img/I4G.svg"
 import zuri from "../../assets/img/Zuri.Internship_Logo.svg"
+import footerText from "../../assets/img/Footer text.svg"
 import './page.style.css'
 
 const Page = () => {
@@ -18,15 +19,15 @@ const Page = () => {
         <a href="https://books.zuri.team/design-rules" className="link" id="book__design">Design Books</a>
       </nav>
       <div className="socials">
-        <a href=""><img src={slack} alt="slack logo" /></a>
-        <a href=""><img src={github} alt="github logo" /></a>
+        <a href="https://slack.com"><img src={slack} alt="slack logo" /></a>
+        <a href="https://github.com/Ezeh20"><img src={github} alt="github logo" /></a>
       </div>
       <footer className="footer">
         <div className="line"></div>
         <div className="footer-content">
-          <a href=""><img src={zuri} alt="zuri-logo" /></a>
-          <p className="footer-text">HNG Internship 9 Frontend Task</p>
-          <a href=""><img src={i4g} alt="i4g-logo" /></a>
+          <a href="https://zuri.team/"><img src={zuri} alt="zuri-logo" className="zuri-logo" /></a>
+          <a href="https://zuri.team/"><img src={footerText} alt="" className="footer-text"/></a>
+          <a href="https://ingressive.org/"><img src={i4g} alt="i4g-logo"  className="i4g-logo"/></a>
         </div>
       </footer>
     </div>

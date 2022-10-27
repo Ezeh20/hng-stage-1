@@ -1,6 +1,4 @@
-
-
-.head{
+.head {
   display: flex;
   justify-content: center;
 }
@@ -39,12 +37,25 @@
   left: 0;
   opacity: 0;
 }
-.bg-hover:hover{
-    opacity: .89;
+.bg-hover:hover {
+  opacity: 0.89;
 }
-.twitter{
-    font-size: 20px;
-    color: #101828;
-    font-weight: 700;
-    line-height: 30px;
+.twitter {
+  font-size: 20px;
+  color: #101828;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+
+@media screen and (min-width: 500px) {
+  .more-button{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .share-button{
+    display: none;
+  }
 }
