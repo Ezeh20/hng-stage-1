@@ -1,18 +1,26 @@
 {
   "files": {
-    "main.css": "/hng-stage-1/static/css/main.639a50f7.css",
-    "main.js": "/hng-stage-1/static/js/main.242dce38.js",
+    "main.css": "/hng-stage-1/static/css/main.a32d1339.css",
+    "main.js": "/hng-stage-1/static/js/main.17cb847e.js",
     "static/js/787.bdff6552.chunk.js": "/hng-stage-1/static/js/787.bdff6552.chunk.js",
-    "static/media/display-pic-hover.svg": "/hng-stage-1/static/media/display-pic-hover.859ee6c06a59d0cd5268053f028a09ce.svg",
-    "static/media/display-pic.svg": "/hng-stage-1/static/media/display-pic.0bf2cf9f59f9d289d55b9e6352476d64.svg",
+    "static/media/ceejay.webp": "/hng-stage-1/static/media/ceejay.01cb111043edb34062d5.webp",
+    "static/media/I4G.svg": "/hng-stage-1/static/media/I4G.361fe9004147fd213153c43561e8c340.svg",
+    "static/media/Footer text.svg": "/hng-stage-1/static/media/Footer text.ffc0a9517dad8c88130c88c30529d148.svg",
+    "static/media/Tooltip.svg": "/hng-stage-1/static/media/Tooltip.6398a6b13150ca18b9d5517888fef67c.svg",
+    "static/media/Zuri.Internship_Logo.svg": "/hng-stage-1/static/media/Zuri.Internship_Logo.428cf03f5de8c94bd46fff3da1fb5668.svg",
+    "static/media/State-Focus.svg": "/hng-stage-1/static/media/State-Focus.ab6860d6b8551087333641c2bffda977.svg",
+    "static/media/slack.svg": "/hng-stage-1/static/media/slack.6fa75d08a444264c64393c623e71c055.svg",
+    "static/media/cam.svg": "/hng-stage-1/static/media/cam.6317244a5381be929492c969c7c62821.svg",
+    "static/media/Icon.svg": "/hng-stage-1/static/media/Icon.e94422cc521d2934fc5ccbdf0447c0c6.svg",
     "static/media/more-Default.svg": "/hng-stage-1/static/media/more-Default.8bd1eb24137cc61f24a03120e8766b91.svg",
+    "static/media/Share-Default.svg": "/hng-stage-1/static/media/Share-Default.8b4369de8ab30a8ae240d027dafeccf0.svg",
     "index.html": "/hng-stage-1/index.html",
-    "main.639a50f7.css.map": "/hng-stage-1/static/css/main.639a50f7.css.map",
-    "main.242dce38.js.map": "/hng-stage-1/static/js/main.242dce38.js.map",
+    "main.a32d1339.css.map": "/hng-stage-1/static/css/main.a32d1339.css.map",
+    "main.17cb847e.js.map": "/hng-stage-1/static/js/main.17cb847e.js.map",
     "787.bdff6552.chunk.js.map": "/hng-stage-1/static/js/787.bdff6552.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.639a50f7.css",
-    "static/js/main.242dce38.js"
+    "static/css/main.a32d1339.css",
+    "static/js/main.17cb847e.js"
   ]
 }
