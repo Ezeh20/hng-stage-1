@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  max-width: 700px;
+  max-width: 750px;
 }
 .nav-button {
   position: absolute;
@@ -47,15 +47,61 @@
   line-height: 30px;
 }
 
+.share-button:hover {
+  cursor: pointer;
+  transition: all 3s ease-in-out;
+}
+
+.share-share {
+  position: relative;
+}
+.tool {
+  position: absolute;
+  left: -6.8rem;
+  top: 0.11rem;
+}
+.profile-sec {
+  position: relative;
+}
+.img {
+  width: 88px;
+  height: 88px;
+  background-size: cover;
+  object-fit: contain;
+  background-position: center;
+  border-radius: 50%;
+}
+.overlay {
+  width: 88px;
+  height: 88px;
+  background-color: #344054;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  opacity: 0;
+}
+.overlay:hover {
+  opacity: .75;
+}
+.cam {
+  position: absolute;
+  bottom: 11px;
+}
 
 @media screen and (min-width: 500px) {
-  .more-button{
+  .more-button {
     display: none;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .share-button{
+  .share-button {
+    display: none;
+  }
+  .tool {
     display: none;
   }
 }
