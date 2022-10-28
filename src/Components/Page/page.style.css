@@ -55,12 +55,6 @@
   margin-bottom: 32px;
 }
 
-@media screen and (min-width: 400px) {
-  .footer-content {
-    align-items: center;
-  }
-}
-
 @media screen and (min-width: 650px) {
   .footer-content {
     flex-direction: row;
