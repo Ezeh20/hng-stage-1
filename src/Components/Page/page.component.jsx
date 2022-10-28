@@ -11,7 +11,7 @@ const Page = () => {
     <div className="page container">
       <Profile />
       <nav className="links">
-        <a href="https://twitter.com/Cii_jay11000" className="link" id="btn__zuri">Twitter Link</a>
+        <a href="https://twitter.com/Cii_jay11000" className="link" id="twitter">Twitter Link</a>
         <a href="https://training.zuri.team/" className="link" id="btn__zuri">Zuri Team</a>
         <a href="http://books.zuri.team " className="link" id="books">Zuri Books</a>
         <a href="https://books.zuri.team/python-for-beginners?ref_id=Cii-jay" className="link" id="book__python">Python books</a>

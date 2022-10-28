@@ -32,7 +32,7 @@ const Profile = () => {
             </div>
           </div>
           <p className="twitter" id="twitter">Ceejay__1</p>
-          <p className="twitter" id="slack" hidden>Cii-jay</p>
+          <p className="slack" id="slack" hidden>Cii-jay</p>
         </div>
         <div className="nav-button">
           <img src={moreButton ? morepressed : more} alt="" className="more-button" onClick={() => setMoreButton(click => !click)} />
