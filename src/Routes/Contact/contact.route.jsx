@@ -1,7 +1,10 @@
+import { useForm } from "react-hook-form"
 import Footer from "../../Components/Footer/footer.component"
 import "./contact.css"
 
+
 const Contact = () => {
+    const { register, handleSubmit, formState: { errors } } = useForm()
     const name = "cii-jay"
     const onSubmit = (data) => {
         console.log(data)
@@ -14,15 +17,16 @@ const Contact = () => {
                     <p className="subtitle">Hi there, contact me to ask me about anything you have in mind.</p>
                 </header>
                 <section className="contact-form">
-                    <form className="form" onSubmit={onSubmit}>
+                    <form className="form" onSubmit={handleSubmit(onSubmit)}>
                         <div className="top">
                             <div className="form-field">
                                 <label className="label" htmlFor="first_name">First Name</label>
-                                <input type="text" className="input-area" id="first_name" placeholder="Enter your first name" />
+                                <input type="text" className="input-area inp-top" id="first_name" placeholder="Enter your first name" 
+                                {...register} />
                             </div>
                             <div className="form-field">
                                 <label className="label" htmlFor="last_name">Last Name</label>
-                                <input type="text" className="input-area" id="last_name" placeholder="Enter your last name" />
+                                <input type="text" className="input-area inp-top" id="last_name" placeholder="Enter your last name" />
                             </div>
                         </div>
                         <div className="bottom">
