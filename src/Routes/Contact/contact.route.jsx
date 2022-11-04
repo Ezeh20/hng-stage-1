@@ -17,12 +17,18 @@ const Contact = () => {
         let show = sett.current
         show.className = "sub"
     }
+    //disable button onSubmit
+    let disable = () => {
+        let disableonSubmit = sett.current
+        disableonSubmit.disabled = true
+    }
     //Form action onSubmit
     const onSubmit = (data) => {
         user = data.firstName
         reset()
         show()
         setMessage(`${user}, message sent`)
+        disable()
     }
     return (
         <div className="container">

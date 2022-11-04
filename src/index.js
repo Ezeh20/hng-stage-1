@@ -8,7 +8,7 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename="/hng-stage-1">
       <App />
     </BrowserRouter>
   </React.StrictMode>
