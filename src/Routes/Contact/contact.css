@@ -1,0 +1,23 @@
+.contact {
+  margin-top: 64px;
+}
+
+.header {
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin-bottom: 48px;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 600;
+  color: #101828;
+}
+.subtitle {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #475467;
+}

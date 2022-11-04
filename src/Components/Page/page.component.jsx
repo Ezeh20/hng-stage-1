@@ -1,9 +1,8 @@
+import { Link } from "react-router-dom";
+import Footer from "../Footer/footer.component";
 import Profile from "../Profile/profile.component";
 import slack from "../../assets/img//slack.svg"
 import github from "../../assets/img//Icon.svg"
-import i4g from "../../assets/img/I4G.svg"
-import zuri from "../../assets/img/Zuri.Internship_Logo.svg"
-import footerText from "../../assets/img/Footer text.svg"
 import './page.style.css'
 
 const Page = () => {
@@ -17,19 +16,13 @@ const Page = () => {
         <a href="https://books.zuri.team/python-for-beginners?ref_id=CiiJay" className="link" id="book__python">Python books</a>
         <a href="https://background.zuri.team" className="link" id="pitch">Background Check for Coders</a>
         <a href="https://books.zuri.team/design-rules" className="link" id="book__design">Design Books</a>
+        <Link className="link" id="contact" to="/contact">Contact Me</Link>
       </nav>
       <div className="socials">
         <a href="https://slack.com"><img src={slack} alt="slack logo" /></a>
         <a href="https://github.com/Ezeh20/hng-stage-1"><img src={github} alt="github logo" /></a>
       </div>
-      <footer className="footer">
-        <div className="line"></div>
-        <div className="footer-content">
-          <a href="https://zuri.team/"><img src={zuri} alt="zuri-logo" className="zuri-logo" /></a>
-          <a href="https://zuri.team/"><img src={footerText} alt="" className="footer-text"/></a>
-          <a href="https://ingressive.org/"><img src={i4g} alt="i4g-logo"  className="i4g-logo"/></a>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
