@@ -1,14 +1,28 @@
-import { useForm } from "react-hook-form"
-import Footer from "../../Components/Footer/footer.component"
-import "./contact.css"
+import { useForm } from "react-hook-form";
+import { useState, useRef } from "react";
+import Footer from "../../Components/Footer/footer.component";
+import "./contact.css";
 
 
 const Contact = () => {
-    const { register, handleSubmit, reset, trigger, formState: { errors } } = useForm()
-    const name = "cii-jay"
+    const [button, setButton] = useState(true);
+    const [message, setMessage] = useState('Send message');
+    const sett = useRef(null);
+    const { register, handleSubmit, reset, trigger, formState: { errors } } = useForm();
+    const name = "cii-jay";
+    let user = '';
+
+    //change button color onSubmit
+    let show = () => {
+        let show = sett.current
+        show.className = "sub"
+    }
+    //Form action onSubmit
     const onSubmit = (data) => {
+        user = data.firstName
         reset()
-        console.log(data)
+        show()
+        setMessage(`${user}, message sent`)
     }
     return (
         <div className="container">
@@ -63,11 +77,10 @@ const Contact = () => {
                             </div>
                         </div>
                         <label className="terms">
-                            <input type="checkbox" />
+                            <input type="checkbox" onClick={() => setButton(current => !current)} />
                             <p className="accept-terms">You agree to provide your data to {name} who may contact you.</p>
                         </label>
-
-                        <button type="submit" id="btn__submit" className="submit">Send message</button>
+                        <button type="submit" id="btn__submit" className={button ? "submit-disabled" : "submit"} disabled={button} ref={sett}>{message}</button>
                     </form>
                 </section>
             </div>

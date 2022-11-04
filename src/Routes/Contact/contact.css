@@ -131,6 +131,29 @@ input[type="checkbox"]:checked {
   border-radius: 8px;
   transition: all ease-in-out 0.3s;
 }
+.submit-disabled {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 66px;
+  background: #b2ddff;
+  border: 1px solid #b2ddff;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  transition: all ease-in-out 0.3s;
+}
+.sub {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 66px;
+  background: #04c46d;
+  border: 1px solid #04c66d;
+  border-radius: 8px;
+  transition: all ease-in-out 0.3s;
+}
 .submit:hover {
   background: #175cd3;
   transition: all ease-in-out 0.3s;
@@ -152,7 +175,7 @@ small {
   border-radius: 8px;
   outline: none;
 }
-.invalid-text{
+.invalid-text {
   border: 1px solid #f89687;
   min-width: 50px;
   max-width: 720px;
@@ -182,6 +205,12 @@ small {
     margin-top: 156px;
   }
   .submit {
+    margin-bottom: 188px;
+  }
+  .submit-disabled {
+    margin-bottom: 188px;
+  }
+  .sub {
     margin-bottom: 188px;
   }
   .top {
