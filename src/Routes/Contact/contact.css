@@ -136,6 +136,36 @@ input[type="checkbox"]:checked {
   transition: all ease-in-out 0.3s;
 }
 
+small {
+  color: #f83f23;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.invalid {
+  border: 1px solid #f89687;
+  padding: 10px 14px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #f83f23;
+  border-radius: 8px;
+  outline: none;
+}
+.invalid-text{
+  border: 1px solid #f89687;
+  min-width: 50px;
+  max-width: 720px;
+  min-height: 132px;
+  max-height: 132px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  resize: none;
+  outline: none;
+}
+
 @media screen and (max-width: 350px) {
   input[type="checkbox"] {
     width: 40px;
@@ -154,11 +184,11 @@ input[type="checkbox"]:checked {
   .submit {
     margin-bottom: 188px;
   }
-  .top{
+  .top {
     display: flex;
     justify-content: space-between;
   }
-  .inp-top{
+  .inp-top {
     width: 348px;
   }
 }

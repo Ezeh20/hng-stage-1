@@ -4,9 +4,10 @@ import "./contact.css"
 
 
 const Contact = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm()
+    const { register, handleSubmit, reset, trigger, formState: { errors } } = useForm()
     const name = "cii-jay"
     const onSubmit = (data) => {
+        reset()
         console.log(data)
     }
     return (
@@ -21,28 +22,51 @@ const Contact = () => {
                         <div className="top">
                             <div className="form-field">
                                 <label className="label" htmlFor="first_name">First Name</label>
-                                <input type="text" className="input-area inp-top" id="first_name" placeholder="Enter your first name" 
-                                {...register} />
+                                <input type="text" className={errors.firstName ? "invalid inp-top" : "input-area inp-top"} id="first_name" placeholder="Enter your first name"
+                                    {...register("firstName", {
+                                        required: "This field is required"
+                                    })} />
+                                {errors.firstName && (<small>{errors.firstName.message}</small>)}
                             </div>
                             <div className="form-field">
                                 <label className="label" htmlFor="last_name">Last Name</label>
-                                <input type="text" className="input-area inp-top" id="last_name" placeholder="Enter your last name" />
+                                <input type="text" className={errors.lastName ? "invalid inp-top" : "input-area inp-top"} id="last_name" placeholder="Enter your last name"
+                                    {...register("lastName", { required: "This field is required" })} />
+                                {errors.lastName && (<small>{errors.lastName.message}</small>)}
                             </div>
                         </div>
                         <div className="bottom">
                             <div className="form-field">
                                 <label className="label" htmlFor="email">Email</label>
-                                <input type="password" className="input-area" id="email" placeholder="yourname@email.com" />
+                                <input type="password" className={errors.email ? "invalid" : "input-area"} id="email" placeholder="yourname@email.com"
+                                    {...register("email", {
+                                        required: "Enter a vaild email address", pattern: {
+                                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                                            message: "invalid email"
+                                        }
+                                    })}
+                                    onKeyUp={() => {
+                                        trigger('email')
+                                    }} />
+                                {errors.email && (<small>{errors.email.message}</small>)}
                             </div>
                             <div className="form-field">
                                 <label className="label" htmlFor="message">Message</label>
-                                <textarea id="message" className="text-area" name="me" placeholder="Send me a message and I'll reply you as soon as possible..."></textarea>
+                                <textarea id="message" className={errors.message ? "invalid-text" : "text-area"} name="me" placeholder="Send me a message and I'll reply you as soon as possible..."
+                                    {...register("message", {
+                                        required: "Please enter a message", minLength: {
+                                            value: 2,
+                                            message: "Message too short"
+                                        }
+                                    })}></textarea>
+                                {errors.message && (<small>{errors.message.message}</small>)}
                             </div>
                         </div>
                         <label className="terms">
                             <input type="checkbox" />
                             <p className="accept-terms">You agree to provide your data to {name} who may contact you.</p>
                         </label>
+
                         <button type="submit" id="btn__submit" className="submit">Send message</button>
                     </form>
                 </section>
