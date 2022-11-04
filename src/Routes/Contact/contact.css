@@ -21,3 +21,69 @@
   font-weight: 400;
   color: #475467;
 }
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  row-gap: 6px;
+}
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #344054;
+}
+.input-area {
+  padding: 10px 14px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  color: #667085;
+  outline: none;
+}
+
+.text-area {
+  min-width: 50px;
+  max-width: 720px;
+  min-height: 132px;
+  max-height: 132px;
+  padding: 12px 14px;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  resize: none;
+  color: #667085;
+  outline: none;
+}
+
+.input-area:focus,
+.text-area:focus {
+  border: 1px solid #84caff;
+}
+
+.terms {
+  display: flex;
+  column-gap: 12px;
+}
+.accept-terms {
+  font-size: 16px;
+  line-height: 24px;
+  color: #475467;
+}
+.check{
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  outline: none;
+}
