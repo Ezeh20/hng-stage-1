@@ -64,6 +64,9 @@
   color: #667085;
   outline: none;
 }
+.text-area:focus{
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
+}
 
 .input-area:focus,
 .text-area:focus {
@@ -113,11 +116,13 @@ input[type="checkbox"]:checked::before {
 
 input[type="checkbox"]:focus {
   outline: solid #84caff;
+  box-shadow: 0px 0px 0px 4px #D1E9FF;
 }
 
 input[type="checkbox"]:checked {
-  border: 1px solid #84caff;
+  border: 1px solid #1570EF;
 }
+
 
 .submit {
   padding: 12px 20px;
