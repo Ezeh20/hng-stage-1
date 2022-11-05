@@ -44,7 +44,7 @@ const Contact = () => {
                         <div className="top">
                             <div className="form-field">
                                 <label className="label" htmlFor="first_name">First Name</label>
-                                <input type="text" id="first_name"  className={errors.firstName ? "invalid inp-top" : "input-area inp-top"} placeholder="Enter your first name"
+                                <input type="text" id="first_name" disabled={checked} className={errors.firstName ? "invalid inp-top" : "input-area inp-top"} placeholder="Enter your first name"
                                     {...register("firstName", {
                                         required: "This field is required"
                                     })} />
@@ -52,7 +52,7 @@ const Contact = () => {
                             </div>
                             <div className="form-field">
                                 <label className="label" htmlFor="last_name">Last Name</label>
-                                <input type="text" id="last_name" className={errors.lastName ? "invalid inp-top" : "input-area inp-top"}  placeholder="Enter your last name"
+                                <input type="text" id="last_name" disabled={checked} className={errors.lastName ? "invalid inp-top" : "input-area inp-top"}  placeholder="Enter your last name"
                                     {...register("lastName", { required: "This field is required" })} />
                                 {errors.lastName && (<small>{errors.lastName.message}</small>)}
                             </div>
@@ -60,7 +60,7 @@ const Contact = () => {
                         <div className="bottom">
                             <div className="form-field">
                                 <label className="label" htmlFor="email">Email</label>
-                                <input type="password" id="email"  className={errors.email ? "invalid" : "input-area"} placeholder="yourname@email.com"
+                                <input type="password" id="email" disabled={checked} className={errors.email ? "invalid" : "input-area"} placeholder="yourname@email.com"
                                     {...register("email", {
                                         required: "Enter a vaild email address", pattern: {
                                             value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -74,7 +74,7 @@ const Contact = () => {
                             </div>
                             <div className="form-field">
                                 <label className="label" htmlFor="message">Message</label>
-                                <textarea id="message"  className={errors.message ? "invalid-text" : "text-area"} name="me" placeholder="Send me a message and I'll reply you as soon as possible..."
+                                <textarea id="message" disabled={checked} className={errors.message ? "invalid-text" : "text-area"} name="me" placeholder="Send me a message and I'll reply you as soon as possible..."
                                     {...register("message", {
                                         required: "Please enter a message", minLength: {
                                             value: 2,
