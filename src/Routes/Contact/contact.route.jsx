@@ -10,7 +10,7 @@ const Contact = () => {
     const [checked, setChecked] = useState(false);
     const sett = useRef(null);
     const { register, handleSubmit, reset, trigger, formState: { errors } } = useForm();
-    const name = "cii-jay";
+    const name = "Ezeh Chijioke";
     let user = '';
 
     //change button color onSubmit
@@ -52,7 +52,7 @@ const Contact = () => {
                             </div>
                             <div className="form-field">
                                 <label className="label" htmlFor="last_name">Last Name</label>
-                                <input type="text" id="last_name" disabled={checked} className={errors.lastName ? "invalid inp-top" : "input-area inp-top"}  placeholder="Enter your last name"
+                                <input type="text" id="last_name" disabled={checked} className={errors.lastName ? "invalid inp-top" : "input-area inp-top"} placeholder="Enter your last name"
                                     {...register("lastName", { required: "This field is required" })} />
                                 {errors.lastName && (<small>{errors.lastName.message}</small>)}
                             </div>
@@ -85,7 +85,7 @@ const Contact = () => {
                             </div>
                         </div>
                         <label className="terms">
-                            <input type="checkbox" onClick={() => setButton(current => !current)} disabled={checked}/>
+                            <input type="checkbox" onClick={() => setButton(current => !current)} disabled={checked} />
                             <p className="accept-terms">You agree to provide your data to {name} who may contact you.</p>
                         </label>
                         <button type="submit" id="btn__submit" className={button ? "submit-disabled" : "submit"} disabled={button} ref={sett}>{message}</button>
