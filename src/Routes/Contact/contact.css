@@ -114,14 +114,7 @@ input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 
-input[type="checkbox"]:focus {
-  outline: solid #84caff;
-  box-shadow: 0px 0px 0px 4px #D1E9FF;
-}
 
-input[type="checkbox"]:checked {
-  border: 1px solid #1570EF;
-}
 
 
 .submit {
